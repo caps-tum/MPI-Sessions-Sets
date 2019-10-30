@@ -32,30 +32,6 @@ cd sample
 make
 ```
 
-## Sample Tools
-
-This repository contains two sample tools:
-- [mpiP](https://github.com/LLNL/mpiP), which is a light-weight MPI Profiler developed by the Lawrence Livermore National Laboratory.
-- very_simple_tool (aka. EmptyTool),  which intercepts every single MPI call but returns immediately, for evaluation purposes only. 
-
-The tools can be built easily with make:
-```
-cd tools_example
-cd mpiP_refactored
-make
-```
-```
-cd tools_example
-cd very_simple_tool
-make
-```
-## Exection
-To test the existing tools, one must allow QMPI to load a given tool via environment variable.
-Example:
-```
-t.b.d.
-```
-
 ## Limitations
 - Currently only support shared object (.so) based dynamic library tools
 - Only supports linux system (and macOS), Windows is not supported. 
